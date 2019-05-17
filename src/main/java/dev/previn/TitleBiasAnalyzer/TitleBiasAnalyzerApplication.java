@@ -7,25 +7,27 @@ import java.util.Scanner;
 
 public class TitleBiasAnalyzerApplication {
 
+    private static final double ACCEPTABLE_BIAS_RANGE = 0.5;
+
     public static void main(final String[] args) {
         final Scanner scanner = new Scanner(System.in);
         System.out.println("Enter the title of the article: ");
         final String title = scanner.nextLine();
         System.out.println("Enter the content of the article: ");
         final String content = scanner.nextLine();
-        final int titleRating = TitleAnalyzer.getTitleSentimentRating(title);
-        final int contentRating = ContentAnalyzer.getContentSentimentRating(content);
+        final double titleRating = TitleAnalyzer.getTitleSentimentRating(title);
+        final double contentRating = ContentAnalyzer.getContentSentimentRating(content);
 
         System.out.println("Title Rating: " + titleRating);
         System.out.println("Content Rating: " + contentRating);
         System.out.println(titleBiasText(titleRating, contentRating));
     }
 
-    private static String titleBiasText(final int titleRating, final int contentRating) {
-        final int diff = titleRating - contentRating;
-        if (diff > 0) {
+    private static String titleBiasText(final double titleRating, final double contentRating) {
+        final double diff = titleRating - contentRating;
+        if (diff > ACCEPTABLE_BIAS_RANGE) {
             return "The title appears positively biased compared to the content";
-        } else if (diff < 0) {
+        } else if (diff < -ACCEPTABLE_BIAS_RANGE) {
             return "The title appears negatively biased compared to the content";
         } else {
             return "The title does not appear biased compared to the content";
