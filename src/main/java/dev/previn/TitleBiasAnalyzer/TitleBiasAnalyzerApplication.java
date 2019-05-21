@@ -17,7 +17,7 @@ public class TitleBiasAnalyzerApplication {
         final String content = scanner.nextLine();
         final double titleRating = TitleAnalyzer.getTitleSentimentRating(title);
         final double contentRating = ContentAnalyzer.getContentSentimentRating(content);
-
+        System.out.println("Subject: " + TitleAnalyzer.getSubject(title));
         System.out.println("Title Rating: " + titleRating);
         System.out.println("Content Rating: " + contentRating);
         System.out.println(titleBiasText(titleRating, contentRating));
