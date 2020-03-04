@@ -64,7 +64,7 @@
     </dependencies>
 
     <scm>
-        <url>https://github.com/previnkk/title-bias-analyzer</url>
-        <connection>scm:git:git://github.com/previnkk/title-bias-analyzer.git</connection>
+        <url>https://github.com/previnkmr/title-bias-analyzer</url>
+        <connection>scm:git:git://github.com/previnkmr/title-bias-analyzer.git</connection>
     </scm>
 </project>
