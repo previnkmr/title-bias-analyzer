@@ -1,4 +1,4 @@
-package dev.previn.TitleBiasAnalyzer.utils;
+package dev.previn.titlebiasanalyzer.utils;
 
 import edu.stanford.nlp.coref.data.CorefChain;
 import edu.stanford.nlp.ie.util.RelationTriple;

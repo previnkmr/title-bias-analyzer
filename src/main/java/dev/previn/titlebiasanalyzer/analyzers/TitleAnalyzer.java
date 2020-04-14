@@ -1,6 +1,6 @@
-package dev.previn.TitleBiasAnalyzer.analyzers;
+package dev.previn.titlebiasanalyzer.analyzers;
 
-import dev.previn.TitleBiasAnalyzer.utils.NLPUtils;
+import dev.previn.titlebiasanalyzer.utils.NLPUtils;
 import org.apache.commons.lang.StringUtils;
 
 public class TitleAnalyzer {

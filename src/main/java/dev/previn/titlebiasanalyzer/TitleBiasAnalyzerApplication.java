@@ -1,7 +1,7 @@
-package dev.previn.TitleBiasAnalyzer;
+package dev.previn.titlebiasanalyzer;
 
-import dev.previn.TitleBiasAnalyzer.analyzers.ContentAnalyzer;
-import dev.previn.TitleBiasAnalyzer.analyzers.TitleAnalyzer;
+import dev.previn.titlebiasanalyzer.analyzers.ContentAnalyzer;
+import dev.previn.titlebiasanalyzer.analyzers.TitleAnalyzer;
 
 import java.util.Scanner;
 
