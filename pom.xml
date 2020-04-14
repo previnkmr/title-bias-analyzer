@@ -9,7 +9,10 @@
     <version>1.0-SNAPSHOT</version>
 
     <properties>
-        <java.version>11</java.version>
+        <maven.compiler.source>14</maven.compiler.source>
+        <java.version>14</java.version>
+        <jdk.version>14</jdk.version>
+        <jdk-release.version>14</jdk-release.version>
 <!--        <spring.version>5.1.6.RELEASE</spring.version>-->
     </properties>
 
@@ -66,5 +69,6 @@
     <scm>
         <url>https://github.com/previnkmr/title-bias-analyzer</url>
         <connection>scm:git:git://github.com/previnkmr/title-bias-analyzer.git</connection>
+        <developerConnection>scm:git:git@github.com:previnkmr/title-bias-analyzer.git</developerConnection>
     </scm>
 </project>
